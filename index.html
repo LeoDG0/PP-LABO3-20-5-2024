@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg" />
+
+    <script src="./js/index.js" type="module" defer></script>
+
+    <title>Clase 5</title>
+  </head>
+  <body>
+    <header class="flex">
+      <div class="navegacion-flex">
+        <img src="./assets/images/logo.svg" class="Logo-Principal" alt="Logo Principal" />
+
+        <nav class="info">
+          <ul class="flex">
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Anuncio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <h1>Administrador de planetas</h1>
+    </header>
+
+    <div class="container-sections">
+      <section>
+        <form action="" method="post" id="form-item">
+          <h2>Informacion del Anuncio</h2>
+
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+
+            <input
+              type="text"
+              required
+              name="nombre"
+              id="nombre"
+              placeholder="Ingrese nombre.."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="tamano">Tamaño</label>
+
+            <input
+              type="number"
+              required
+              name="tamano"
+              id="tamano"
+              placeholder="Ingrese tamaño.."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="masa">Masa</label>
+            <input type="text"
+            required
+            name="masa"
+            id="masa"
+            placeholder="Ingrese masa.."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="tipo">Tipo</label>
+            <select name="Tipo" id="tipo">
+              <option value="">Seleccione</option>
+              <option value="rocoso">rocoso</option>
+              <option value="gaseoso">gaseoso</option>
+              <option value="helado">helado</option>
+              <option value="enano">enano</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="distancia">Distancia al Sol</label>
+            <input type="number" 
+            id="distancia" 
+            name="distancia" 
+            placeholder="Ingrese Distancia..">
+          </div>
+
+          <div class="form-group">
+            <label for="vida">Presenta Vida</label>
+            <input type="checkbox" 
+            id="vida" 
+            name="vida">
+          </div>
+          
+          <div class="form-group">
+            <label for="anillo">Presenta Anillo</label>
+            <input type="checkbox" 
+            id="anillo" 
+            name="anillo">
+          </div>
+          
+          <div class="form-group">
+            <label for="composicion">Composicion Atmosferica</label>
+            <textarea 
+              id="composicion" 
+              name="composicion" 
+              placeholder="Ingrese Composición.." 
+              rows="3">
+            </textarea>
+          </div>
+          
+          <div class="form-group">
+            <button type="submit" class="btn">Guardar</button>
+            <button type="cancel" class="btn">Cancelar</button>
+            <button type="cancel" class="btn">Eliminar</button>
+          </div>
+        </form>
+
+        <br /><br /><br /><br /><br />
+
+        <div class="container-btn-delete-all">
+          <button type="button" id="btn-delete-all" class="btn">Borrar Todo</button>
+        </div>
+
+        <div class="container-table flex">
+          <table id="table-items" class="table-items table-stripped flex">
+            <thead>
+              <tr class="flex">
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Tamaño</th>
+                <th>Masa</th>
+                <th>Tipo</th>
+                <th>Distancia al sol</th>
+                <th>Posee Anillo</th>
+                <th>Presencia de vida</th>
+                <th>Composicion Atmosferica</th>
+              </tr>
+            </thead>
+
+            <tbody class="tbodyx"></tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <footer class="flex">
+      <nav>
+        <ul class="flex">
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Anuncio</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <p>Todos los derechos reservados <span id="year"></span> &copy;</p>
+    </footer>
+
+    <div id="spinner" class="spinner">
+        <img src="./assets/images/logo.svg" alt="Spinner" class="spinner-img">
+    </div>
+
+  </body>
+</html>

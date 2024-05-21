@@ -1,0 +1,127 @@
+@font-face {
+  font-family: poppins;
+  src: url(../assets/fonts/Poppins-Black.ttf);
+}
+
+header {
+  padding: 20px 20px;
+  background-color: grey;
+  background-image: url(../assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  font-family: poppins, sans-serif;
+}
+
+.info{
+  position: absolute;
+  right: 50px;
+  top: 60px;
+}
+
+.Logo-Principal{
+  height: 100px;
+}
+
+.navegacion-flex {
+  display: flex;
+  padding-top: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header nav ul,
+footer nav ul {
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+
+  flex-direction: row;
+  justify-content: right;
+
+  gap: 1rem;
+}
+
+header nav ul li a,
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+header h1 {
+  padding-top: 415px;
+  color: white;
+  width: 700px;
+  font-size: 50px;
+}
+
+footer {
+  width: 100%;
+  padding: 4rem 1rem;
+
+  align-items: center;
+  justify-content: space-between;
+
+  color: white;
+  background: black;
+  font-family: poppins, sans-serif;
+}
+
+
+.container-sections {
+  width: 120%;
+
+  gap: 3rem;
+}
+
+.container-sections section {
+  min-height: 100vh;
+}
+
+.container-table.flex {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.table-items {
+  width: 200%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background-color: rgb(20, 14, 14);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-items th,
+.table-items td {
+  padding: 15px;
+  text-align: center;
+  border: 1px solid #4f3939;
+}
+
+.table-items th {
+  background-color: #f4f4f4;
+}
+
+.table-items td {
+  background-color: #fff;
+}
+
+.container-btn-delete-all {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-btn-delete-all .btn {
+  max-width: 7rem;
+}

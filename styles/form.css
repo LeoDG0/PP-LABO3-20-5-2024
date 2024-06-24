@@ -8,7 +8,7 @@ form {
   
     padding: 1rem;
     border-radius: 10px;
-    background: whitesmoke;
+    background: gainsboro;
 }
 
 .form-group {
@@ -35,3 +35,8 @@ form {
     align-items: center;
     height: 145vh;
 }
+
+.btn-update{
+    background: green;
+    margin-bottom: 5px;
+  }

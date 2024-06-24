@@ -1,6 +1,12 @@
 class PlanetaBase {
 
-    static nextId = 1;
+    static get nextId(){
+        return parseInt(localStorage.getItem("nextPlanetaId")) || 1;
+    }
+
+    static set nextId(value){
+        localStorage.setItem("nextPlanetaId", value.toString());
+    }
 
     constructor(nombre, tamano, masa, tipo) {
       this.id = PlanetaBase.nextId++;

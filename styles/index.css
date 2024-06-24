@@ -1,6 +1,13 @@
 @font-face {
-  font-family: poppins;
-  src: url(../assets/fonts/Poppins-Black.ttf);
+  font-family: itim;
+  src: url(../assets/fonts/Itim-Regular.ttf);
+}
+
+.contenedor{
+  width: 100%;
+  max-width: 2000px;
+  margin: auto;
+  overflow:hidden;
 }
 
 header {
@@ -15,7 +22,7 @@ header {
 
   height: 100vh;
 
-  font-family: poppins, sans-serif;
+  font-family: itim, sans-serif;
 }
 
 .info{
@@ -30,10 +37,10 @@ header {
 
 .navegacion-flex {
   display: flex;
-  padding-top: 10px;
   flex-direction: row;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 header nav ul,
@@ -63,15 +70,15 @@ header h1 {
 }
 
 footer {
-  width: 100%;
-  padding: 4rem 1rem;
-
-  align-items: center;
-  justify-content: space-between;
-
+  background-color: #141414;
   color: white;
-  background: black;
-  font-family: poppins, sans-serif;
+  height: 65px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 
@@ -120,6 +127,7 @@ footer {
   width: 80%;
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 5px;
 }
 
 .container-btn-delete-all .btn {
